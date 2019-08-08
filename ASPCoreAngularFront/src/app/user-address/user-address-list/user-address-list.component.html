@@ -1,0 +1,22 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">ZipCode</th>            
+            <th scope="col">Street</th>                     
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of service.list">
+            <th>{{data.UserId}}</th>
+            <td (click)="EditAddress(data)">{{data.FullName}}</td>
+            <td (click)="EditAddress(data)">{{data.City}}</td>
+            <td (click)="EditAddress(data)">{{data.ZipCode}}</td>            
+            <td (click)="EditAddress(data)">{{data.Street}}</td>   
+            <td><i class="fas fa-trash-alt" (click)="DeleteAddress(data.UserId)"></i></td>         
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,8 @@
+td:hover{
+   cursor: pointer; 
+}
+
+.fas:hover{
+color:red;
+transform: scale(1.2)
+}
